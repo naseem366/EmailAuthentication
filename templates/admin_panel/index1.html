@@ -1,0 +1,18 @@
+
+              <h1>Filter Records Between Two Given Dates</h1>
+              <hr/>
+              <form method="POST">
+              {% csrf_token %}
+              From:<input type="date" name="fromdate" required='true'/>
+              To:<input type="date" name="todate" required='true'/>
+              <input type="submit" value="Search"/>
+          
+                <table>
+                    <tr>
+                      <th class="no-sort wpx-60">S.No</th>
+                      <th>Emp Id</th>
+                      <th>Emp Name</th>
+                      <th>Emp Email</th>
+                      <th>Emp Number</th>
+                    </tr>
+              
